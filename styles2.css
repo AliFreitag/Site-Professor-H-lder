@@ -98,6 +98,144 @@ color: #369;
 
 } 
 main {
+    justify-content: left;
+    padding-left: 75px;
+    display: flex; 
+    flex-direction: row;
+    grid-gap: 100px;
+    background-color: rgb(129, 141, 153);
+    font-family: 'Lobster';
+    overflow-y: scroll;
+  }
+  nav {
+    color: white;
+    background-color: rgb(61, 61, 61);
+    max-height: 150px;
+  }
+.navegacao{
+  display:flex; 
+  flex-direction: row; 
+  grid-gap: 100px;
+  color: white;
+  background-color: rgb(61, 61, 61);
+  overflow-x: scroll;
+}
+.categorias {
+  text-align: center;
+  min-width: 150px;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 30px;
+}
+footer {
+  grid-column: span 3;
+  padding: 30px;
+  text-align: center;
+  font-size: auto;
+  background-color:rgb(24, 27, 29);
+  color: white;
+}
+}* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+font-family: arial;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  grid-template-rows: auto 1fr auto;
+
+}
+
+header {
+grid-column: span 3;
+padding: 15px;
+text-align: center;
+background-color: rgb(170, 185, 196);
+}
+
+main {
+justify-content: center;
+display: grid;
+background-color: rgb(129, 141, 153);
+grid-template-columns: repeat(auto-fit, 301px);
+grid-template-rows: repeat(auto-fit, 600px);
+grid-gap: 10px;
+font-family: 'Lobster';
+padding: 20px;
+} 
+
+.produto {
+margin: 25px;
+}
+
+.texto {
+font-size: 20px;
+display: grid;
+grid-template-columns: repeat(1, 250px);
+grid-template-rows: repeat(3, 70px);
+margin-bottom: 10px;
+}
+
+span {
+width: 90px;
+}
+
+span:hover {
+  font-size: 120%;
+  color: #369;
+}
+nav {
+color: white;
+background-color: rgb(61, 61, 61);
+padding: 20px;
+}
+
+.navegacao{
+margin: 20px 0 20px 20px;
+}
+
+.categorias {
+font-size: 15px;
+display: flex;
+letter-spacing: 1px;
+font-weight: 300;
+line-height: 30px;
+margin-top: 25px;
+margin-bottom: 25px;
+}
+
+footer {
+grid-column: span 3;
+padding: 30px;
+text-align: center;
+font-size: 1.4em;
+background-color:rgb(24, 27, 29);
+color: white;
+}
+
+a { color: inherit; 
+text-decoration: none;
+}
+
+a:hover {
+font-size: 120%;
+color: #369;
+}
+
+
+@media (max-width: 500px) {
+.container {
+  display: flex;
+  flex-direction: column;
+
+} 
+main {
+    justify-content: left;
     padding-left: 75px;
     display: flex; 
     flex-direction: row;

@@ -98,6 +98,7 @@ color: #369;
 
 } 
 main {
+    justify-content: left;
     padding-left: 75px;
     display: flex; 
     flex-direction: row;
